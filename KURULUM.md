@@ -9,6 +9,14 @@ Lisans: GPLv2 (LICENSE.txt). Bu klasör olduğu gibi bir web sunucusuna konur.
 - Çevrimdışıyken `?ctz=...` gibi parametreli adresler de açılır.
 - Dropbox betiği çıkarıldı (çevrimdışı çalışmaz). Dosya içe/dışa aktarma yerel dosyalarla çalışır.
 
+## Kalem için araç çubuğu (Rev. B)
+- Butonlar 48×48 px (Apple'ın 44 pt minimum dokunma alanının üstünde), ikonlar 30–36 px.
+- Seçili araç: mavi zemin + beyaz ikon + turuncu çerçeve; sağdaki mod etiketi de maviye döner.
+- Varyantı olan butonlarda (kapasitör, kaynak, anahtar, op-amp, transistör, MOSFET, kapılar) sağ altta küçük üçgen var.
+- En başta **ESC**: seçimi temizler, eleman ekleme aracından Select moduna döner.
+- Yanında **Sil** (kırmızı çöp kutusu): seçili elemanları siler. Seçim yoksa kalemle en son dokunulan eleman silinir. Geri almak için Undo.
+- Ekran dar kalırsa araç çubuğu kendiliğinden ikinci/üçüncü satıra iner (yatay iPad'de 2, dikeyde 3 satır).
+
 ## 1. Yayınla (bir kez, HTTPS şart)
 Service worker yalnızca HTTPS'te çalışır. Ücretsiz iki yol:
 
@@ -37,5 +45,5 @@ Depo → Settings → Pages → Branch: `main` / `(root)`. Adres: `https://<kull
 ## İpuçları
 - Klavye ve fare/trackpad bağlıysa masaüstündeki kısayollar (Ctrl+Z, Del, R, C, L…) çalışır.
 - Devreler cihazda saklanır: File → Save As ile Dosyalar uygulamasına `.txt` kaydedin; Options menüsünden yerel depolama da kullanılabilir.
-- Güncelleme: yeni sürümü aynı adrese yükleyin; uygulama internet varken açıldığında yeni önbelleğe geçer.
+- Güncelleme: yeni sürümü aynı adrese yükleyin (Netlify'da site → Deploys → klasörü sürükle). iPad'de uygulamayı internet varken açın, kapatıp bir kez daha açın; yeni sürüm gelir.
 - iOS, uzun süre (haftalarca) açılmayan sitelerin verisini silebilir. Ana ekrana eklenen uygulamalar bundan muaftır; yine de önemli devreleri dosya olarak kaydedin.
